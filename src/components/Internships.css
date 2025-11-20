@@ -1,0 +1,147 @@
+.internships {
+  padding: 6rem 2rem;
+  background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+.internships-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.internships-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.internship-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+.internship-card:hover {
+  transform: translateY(-10px);
+  border-color: #667eea;
+  box-shadow: 0 20px 40px rgba(102, 126, 234, 0.2);
+}
+
+.internship-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.internship-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.3;
+  flex: 1;
+}
+
+.internship-duration {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.internship-description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.skills-container {
+  margin-bottom: 2rem;
+  flex-grow: 1;
+}
+
+.skills-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.skill-tag {
+  background: #f0f0f0;
+  color: #667eea;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background: #667eea;
+  color: white;
+  transform: scale(1.05);
+}
+
+.apply-btn {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.apply-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.apply-btn:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .internships {
+    padding: 4rem 1.5rem;
+  }
+
+  .internships-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .internship-card {
+    padding: 2rem;
+  }
+
+  .internship-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .internship-title {
+    font-size: 1.4rem;
+  }
+}
